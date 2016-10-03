@@ -41,3 +41,28 @@ VALUES ('1018', 'Augusta', 'Elton', '6 John Way', '(779) 990 - 2295', '(834) 787
 INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
 VALUES ('1019', 'Mary', 'Bennett', '1 Lonely Way', '(899) 720 - 6995', '(802) 987 - 9965', '2/19/1835');
 
+#####Trips#####
+use mydb;
+
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Rock Climbing1', 'Beginner', '$25', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('WhiteWater Rafting, Nantahala', 'Intermediate', '$75', '2 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Backpacking, Local Area', 'Intermediate', '$7', '2 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Tubing, James River', 'Beginner', '$5', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Cycling, Capitol Trail', 'Beginner', '$0', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Canoeing/kayaking James River', 'Beginner', '$0', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Ropes Course1', 'Beginner', '$0', '.5 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Ropes Course2', 'Intermediate', '$10', '.5 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Ropes Course3', 'Advanced', '$20', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Rock Climbing2', 'Intermediate', '$25', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Rock Climbing3', 'Advanced', '$25', '1.5 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Backpacking, App Trail', 'Advanced', '$100', '3 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('WhiteWater Rafting, Ocoee', 'Intermediate', '$75', '2 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Cycling, W&M Tour', 'Beginner', '$0', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Fishing, Lake Matoaka', 'Beginner', '$5', '.5 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Fishing, James River', 'Intermediate', '$20', '1 day'); 
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Fishing, Chesapeake Bay', 'Advanced', '$50', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Capture the flag', 'Beginner', '$0', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Hide & Go seek', 'Beginner', '$0', '1 day');
+insert into trips (TripType, Difficulty, TripFee, TripLength) values('Mud Run', 'Intermediate', '$10', '.5 day');
+
+
