@@ -18,7 +18,7 @@ USE `mydb` ;
 -- Table `mydb`.`Customer`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Customer` (
-  `CustomerID` INT NOT NULL,
+  `CustomerID` INT NOT NULL AUTO_INCREMENT,
   `FirstName` VARCHAR(45) NOT NULL,
   `LastName` VARCHAR(45) NOT NULL,
   `Address` VARCHAR(45) NOT NULL,
@@ -35,21 +35,21 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Customer` (
     REFERENCES `mydb`.`Customer` (`CustomerID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-    ENGINE = INNODB;
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
 -- Table `mydb`.`Trips`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Trips` (
-  `TripCode` INT NOT NULL,
+  `TripCode` INT NOT NULL AUTO_INCREMENT,
   `TripType` VARCHAR(45) NOT NULL,
   `Difficulty` VARCHAR(45) NOT NULL,
   `TripFee` VARCHAR(45) NOT NULL,
   `TripLength` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`TripCode`),
   UNIQUE INDEX `TripCode_UNIQUE` (`TripCode` ASC))
-  ENGINE = INNODB;
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`EmployeesOAG` (
   `DoB` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`EmployeeID`),
   UNIQUE INDEX `EmployeeID_UNIQUE` (`EmployeeID` ASC))
-  ENGINE = INNODB;
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`tripschedule` (
     REFERENCES `mydb`.`EmployeesOAG` (`EmployeeID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-    ENGINE = INNODB;
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`SignUps` (
     REFERENCES `mydb`.`tripschedule` (`TripScheduleID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-    ENGINE = INNODB;
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -133,7 +133,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`JobPositions` (
   `JobDescription` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`PositionID`),
   UNIQUE INDEX `PositionID_UNIQUE` (`PositionID` ASC),
-  UNIQUE INDEX `JobDescription_UNIQUE` (`JobDescription` ASC));
+  UNIQUE INDEX `JobDescription_UNIQUE` (`JobDescription` ASC))
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -157,8 +158,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`EmploymentHistory` (
     FOREIGN KEY (`PositionID`)
     REFERENCES `mydb`.`JobPositions` (`PositionID`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-    ENGINE = INNODB;
+    ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
@@ -175,28 +175,25 @@ CREATE TABLE IF NOT EXISTS `mydb`.`EquipmentType` (
 -- -----------------------------------------------------
 -- Table `mydb`.`RentalAgreement`
 -- -----------------------------------------------------
-- -----------------------------------------------------
--- Table `mydb`.`RentalAgreement`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`RentalAgreement` (
- `AgreementID` INT NOT NULL AUTO_INCREMENT,
- `AgreementDate` DATE NOT NULL,
- `CustomerRentID` INT NOT NULL,
- `EmployeePOSID` INT NOT NULL,
- PRIMARY KEY (`AgreementID`, `CustomerRentID`, `EmployeePOSID`),
- INDEX `CustomerRentID_idx` (`CustomerRentID` ASC),
- INDEX `EmployeePOSID_idx` (`EmployeePOSID` ASC),
- CONSTRAINT `CustomerRentID`
-   FOREIGN KEY (`CustomerRentID`)
-   REFERENCES `mydb`.`Customer` (`CustomerID`)
-   ON DELETE NO ACTION
-   ON UPDATE NO ACTION,
- CONSTRAINT `EmployeePOSID`
-   FOREIGN KEY (`EmployeePOSID`)
-   REFERENCES `mydb`.`EmployeesOAG` (`EmployeeID`)
-   ON DELETE NO ACTION
-   ON UPDATE NO ACTION)
-   ENGINE InnoDB;
+  `AgreementID` INT NOT NULL AUTO_INCREMENT,
+  `AgreementDate` DATE NOT NULL,
+  `CustomerRentID` INT NOT NULL,
+  `EmployeePOSID` INT NOT NULL,
+  PRIMARY KEY (`AgreementID`, `CustomerRentID`, `EmployeePOSID`),
+  INDEX `CustomerRentID_idx` (`CustomerRentID` ASC),
+  INDEX `EmployeePOSID_idx` (`EmployeePOSID` ASC),
+  CONSTRAINT `CustomerRentID`
+    FOREIGN KEY (`CustomerRentID`)
+    REFERENCES `mydb`.`Customer` (`CustomerID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `EmployeePOSID`
+    FOREIGN KEY (`EmployeePOSID`)
+    REFERENCES `mydb`.`EmployeesOAG` (`EmployeeID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+    ENGINE InnoDB;
 
 
 -- -----------------------------------------------------
@@ -239,8 +236,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`RentalDetail` (
     FOREIGN KEY (`InventoryID`)
     REFERENCES `mydb`.`Inventory` (`InventoryID`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-    ENGINE = INNODB;
+    ON UPDATE NO ACTION);
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
