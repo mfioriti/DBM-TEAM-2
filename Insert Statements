@@ -66,3 +66,43 @@ insert into trips (TripType, Difficulty, TripFee, TripLength) values('Hide & Go 
 insert into trips (TripType, Difficulty, TripFee, TripLength) values('Mud Run', 'Intermediate', '$10', '.5 day');
 
 
+
+###TripsSchedule###
+use mydb;
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '2', '2016-09-17' , '1004','1002');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '9', '2016-10-27' , '1007','1012');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '10', '2016-11-17' , '1019','1011');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '11', '2017-12-30' , '1014','1018');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '19', '2017-01-22' , '1006','1007');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '12', '2016-02-08' , '1013','1011');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '14', '2016-11-07' , '1014','1019');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '13', '2016-11-23' , '1008','1012');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '17', '2017-02-31' , '1018','1015');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '6', '2017-03-09' , '1007','1003');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '8', '2017-05-19' , '1016','1002');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '9', '2017-03-12' , '1013','1004');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '14', '2019-09-17' , '1016','1012');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '9', '2010-09-17' , '1004','1002');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '15', '2016-11-12' , '1011','1018');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '8', '2016-11-08' , '1011','1017');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '17', '2016-11-24' , '1019','1014');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '7', '2018-9-31' , '1015','1011');
+
