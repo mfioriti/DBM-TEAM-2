@@ -1,0 +1,43 @@
+#EMPLOYEESOAG
+use mydb;
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1000', 'Jane', 'Austen', '112 Northanger Abbey Lane', '(888) 987 - 2345', '(800) 967 - 2315', '09/22/1979');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1001', 'Lizzie', 'Bennett', '14 Pemberly Lane', '(888) 987 - 2345', '(800) 034 - 2215', '03/15/1825');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1002', 'Lidia', 'Bennett', '14 Pemberly Lane', '(888) 787 - 6845', '(800) 967 - 2315', '05/11/1839');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1003', 'George', 'Whickham', '2 Disgrace Drive', '(858) 787 - 6845', '(820) 667 - 7985', '08/17/1819');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1004', 'Fitzwilliam', 'Darcy', '14 Pemberly Lane', '(888) 987 - 6845', '(800) 967 - 2315', '06/09/1820');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1005', 'Kitty', 'Bennett', '33 Pemberly Lane', '(888) 787 - 6845', '(800) 967 - 2315', '09/23/1834');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1006', 'Charlotte', 'Lucas', '21 Manorside Park', '(958) 267 - 6765', '(820) 777 - 7777', '11/21/1822');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1007', 'William', 'Collins', '22 Manorside Park', '(958) 795 - 6845', '(800) 907 - 8815', '05/11/1819');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1008', 'Charles', 'Bingley', '19 Pemberly Lane', '(888) 787 - 6845', '(800) 967 - 2315', '08/05.1822');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1009', 'Sarah', 'King', '12 Regret Lane', '(865) 700 - 6345', '(802) 937 - 0075', '05/19/1844');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1010', 'William', 'Lucas', '99 Regret Lane', '(865) 710 - 8545', '(802) 947 - 0075', '05/23/1792');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1011', 'Caroline', 'Bingley', '13 Lilith Drive', '(899) 720 - 6995', '(802) 987 - 0065', '12/19/1822');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1012', 'Georgiana', 'Darcy', '12 Sweetheart Lane', '(809) 720 - 6765', '(809) 982 - 0995', '12/19/1840');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1013', 'Caroline', 'Bingley', '13 Lilith Drive', '(899) 720 - 6995', '(802) 987 - 0065', '12/19/1822');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1014', 'Marianne', 'Dashwood', '18 Darbyshire Drive', '(809) 220 - 7795', '(819) 927 - 3365', '12/19/1833');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1015', 'Henry', 'Crawford', '33 England Street', '(669) 460 - 6905', '(822) 447 - 1065', '12/19/1820');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1016', 'Fanny', 'Price', '16 London Lane', '(993) 880 - 6335', '(892) 287 - 1165', '12/19/1819');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1017', 'Robert', 'Ferrars', '17 Big Ben Way', '(899) 720 - 6995', '(802) 987 - 0065', '12/19/1816');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1018', 'Augusta', 'Elton', '6 John Way', '(779) 990 - 2295', '(834) 787 - 1165', '07/22/1889');
+INSERT INTO `employeesoag` (`EmployeeID`, `FirstName`, `LastName`, `Address`, `HomePhone`, `WorkPhone`, `DoB`) 
+VALUES ('1019', 'Mary', 'Bennett', '1 Lonely Way', '(899) 720 - 6995', '(802) 987 - 9965', '2/19/1835');
+
