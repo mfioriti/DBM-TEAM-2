@@ -106,3 +106,27 @@ VALUES ( '17', '2016-11-24' , '1019','1014');
 INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
 VALUES ( '7', '2018-9-31' , '1015','1011');
 
+
+##SignUps##
+use mydb;
+#signups
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('1','1','3');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('2','0','10');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('3','1','5');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('4','0','8');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('5','0','2');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('6','0','1');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('7','1','6');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('8','0','12');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('9','1','13');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('10','0','14');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('11','1','16');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('12','0','19');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('13','1','15');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('14','0','18');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('15','1','7');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('16','1','11');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('17','1','13');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('18','1','3');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('19','0','3');
+INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('20','1','19');
