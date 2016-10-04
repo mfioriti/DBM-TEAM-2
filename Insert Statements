@@ -106,6 +106,12 @@ VALUES ( '17', '2016-11-24' , '1019','1014');
 INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
 VALUES ( '7', '2018-9-31' , '1015','1011');
 
+#THE ONES I LEFT OFF#
+insert into tripschedule (TripCode,tripDate,LeaderID,AssLeaderID)
+values ('8', '2016-11-08', '1011','1017');
+INSERT INTO `tripschedule` ( `TripCode`, `tripDate`, `LeaderID`, `AssLeaderID`)
+VALUES ( '12', '2016-02-08' , '1013','1011');
+
 
 ##SignUps##
 use mydb;
