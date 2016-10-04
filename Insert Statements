@@ -155,3 +155,27 @@ insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, C
 insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) values ('Ann', 'Tucker', '572 Gateway Plaza, Somewhere VA, 11234', '335-555-9941', '568-507-9990', '1985-04-26', 'Alumni');
 insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) values ('Jimmy', 'Taylor', '2112 Animal Crossing, Phoenix AZ, 11234', '381-657-1605', '913-361-8093', '2005-08-24', 'Alumni');
 insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) values ('Richard', 'Rose', '6009 Annamark Crossing, Austin TX, 11234', '318-436-3021', '485-772-1835', '2015-03-19', 'Faculty');
+
+###Inventory###
+use mydb;
+
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('1', 'Rock Climbing Kit', 'Good');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('2', 'Backpack', 'Fair');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('3', 'Tent', 'Fair');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('4', 'Cooler', 'Good');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('5', 'Bike', 'Good');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('6', 'Sleeping Bag', 'Good');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('7', 'Corn Hole', 'Fair');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('8', 'Cooking Kit', 'Poor');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('9', 'Sleeping Pad', 'Poor');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('10', 'Camping Chairs', 'Poor');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('11', 'Hammock', 'Fair');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('12', 'Hanging Tent', 'Fair');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('13', 'Kayak', 'Good');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('14', 'Life Vest', 'Fair');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('15', 'Fishing Rod', 'Poor');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('16', 'Flag Football Kit', 'Good');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('17', 'Capture the Flag Kit', 'Good');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('18', 'Field Lining Set', 'Fair');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('19', 'Beach Volleyball Kit', 'Poor');
+insert into Inventory (InventoryID, EquipmentName, `Condition`) values('20', 'First Aid Kit', 'Good');
