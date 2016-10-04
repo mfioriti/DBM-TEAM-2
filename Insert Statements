@@ -130,3 +130,28 @@ INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('17','1','13
 INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('18','1','3');
 INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('19','0','3');
 INSERT INTO `signups` (CustomerID,InsWaiver,TripScheduleID) VALUES ('20','1','19');
+
+##Customer ID Table###
+##Customer
+
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Burton','Minter','123 Arbor Lane Somewhere, TN 12345','800-123-4562','','','Alumni');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Meryl','Flower','345 Birch Tree Ct A-Place, NY 12345','800-123-4563','','','Student');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Ignacio','Garcia','678 Cedar Park, Williamsburg, VA 12345','800-123-4565','','','Faculty');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Garrett','McGuinness','901 Dogwood Rd, Alrington, VA 12345','800-123-4567','','','Student');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType, SponsorID) Values('Winston','Ironhorse','1 Terrible St, London, UK', '900-555-5555','','','Guest',4);
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Jebus','McChrist-Superstar','45 Church Rd, Bethlehem, PA, 11111', '543-131-0679','111-111-1111','0000-12-25','Alumni');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Gary','Oak','101 Nerdtown Rd, Route 15, 15167','555-555-5555','456-123-7894', '2001-07-04','Faculty');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType, SponsorID) Values('Abraham','Lincoln', '1600 Penn Ave NW, Washington, DC 20036','987-568-7894','789-458-6547','2004-06-24','Guest',1);
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Thomas', 'Jefferson', '1 Montecello Lane, Williamsburg, VA 12334', '800-789-4865','456-8019','1736-07-04','Alumni');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Rock', 'Star', '30 Somewhere Lane, Somewhere, CA 11111','610-345-2450','345-321-4156','1987-02-10','Student');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Mario','Plumber','4 Peach Castle, Mushroom Kingdom, Italy', '555-555-5555','159-489-3547','1984-06-16','Faculty');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType, SponsorID) Values('Luigi', 'Plumber', '5 Rainbow Rd, Mushroom Kingdom, Japan', '489-456-7894','159-489-3547','1984-06-16','Guest',11);
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Peach','Toadstool','4 Peach Castle, Mushroom Kingdom, Italy', '555-555-5555','159-489-3547','1984-06-16','Alumni');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) Values('Maggie','Smith','4001 Farm Lane, Somewhere, NY 12345','303-102-8756','','1967-03-15','Student');
+INSERT INTO Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType, SponsorID) Values('Kim','Possible','601 Future Lane New York New York 11111','','','1998-10-31','Guest',7);
+insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) values ('Gloria', 'Olson', '68746 Gulseth Pass, Somewhere CO, 11234', '865-291-8071', '116-834-9573', '1994-06-23', 'Faculty');
+insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) values ('Carl', 'Burns', '4 Garrison Place, Somewhere CO, 11234', '869-533-4308', '', '2012-01-25', 'Faculty');
+insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) values ('Jane', 'Fowler', '7264 Atwood Circle, Springfield VA, 23105', '970-789-7165', '', '1974-07-17', 'Student');
+insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) values ('Ann', 'Tucker', '572 Gateway Plaza, Somewhere VA, 11234', '335-555-9941', '568-507-9990', '1985-04-26', 'Alumni');
+insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) values ('Jimmy', 'Taylor', '2112 Animal Crossing, Phoenix AZ, 11234', '381-657-1605', '913-361-8093', '2005-08-24', 'Alumni');
+insert into Customer (FirstName, LastName, Address, HomePhone, WorkPhone, DoB, CustomerType) values ('Richard', 'Rose', '6009 Annamark Crossing, Austin TX, 11234', '318-436-3021', '485-772-1835', '2015-03-19', 'Faculty');
