@@ -1,1 +1,39 @@
+####Contains queries 5-8 as listed on the Trello board
+use mydb;
+
+#### Query 5: Provide a list of trips that had the most attendance and lasted the longest in duration.
+select trips.TripType, count(signups.CustomerID) as 'Attendance', trips.TripLength
+from signups
+inner join tripschedule on signups.TripScheduleID = tripschedule.TripScheduleID
+inner join trips on tripschedule.TripCode = trips.TripCode
+group by trips.TripType, trips.TripLength
+order by count(signups.CustomerID) desc, trips.TripLength;
+
+#### Query 6: Give a count of customers for each classification or customer type..
+
+select CustomerType, count(CustomerID) as 'Number of Customer Types'
+from customer
+group by CustomerType;
+
+
+#### Query 7: Choose the highest priced equipment based on the student fee. Display the equipment name and associated student fee.
+##Find student fee and equipmenttype. Multiply values, converted frov varchar to 
+
+select EquipmentName, StudentFee
+from equipmenttype
+order by StudentFee desc
+limit 10;
+
+#### Query 8: Identify customers and their contact information who have sponsored at least 2 guests to acknowledge and reward them. 
+####			Display the information for each sponsor only once.
+
+select cMemb.*, count(cMemb.SponsorID) as 'Guests Sponsored'
+from customer cMemb
+inner join customer cGuest on cMemb.CustomerID = cGuest.CustomerID
+group by cMemb.CustomerID
+having count(cMemb.SponsorID) > 2;
+
+
+
+
 
