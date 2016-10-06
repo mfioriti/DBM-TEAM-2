@@ -218,17 +218,17 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Inventory` (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`RentalDetail` (
   `RentalID` INT NOT NULL AUTO_INCREMENT,
-  `AgreementID` INT NOT NULL,
+  `RentalAgreementID` INT NOT NULL,
   `CheckoutDate` DATE NULL,
   `ExpectedReturnDate` DATE NOT NULL,
   `ActualReturnDate` DATE NULL,
   `InventoryID` INT NOT NULL,
-  PRIMARY KEY (`RentalID`, `AgreementID`, `InventoryID`),
+  PRIMARY KEY (`RentalID`, `RentalAgreementID`, `InventoryID`),
   UNIQUE INDEX `RentalID_UNIQUE` (`RentalID` ASC),
-  INDEX `AgreementID_idx` (`AgreementID` ASC),
+  INDEX `RentalAgreementID_idx` (`RentalAgreementID` ASC),
   INDEX `InventoryID_idx` (`InventoryID` ASC),
-  CONSTRAINT `AgreementID`
-    FOREIGN KEY (`AgreementID`)
+  CONSTRAINT `RentalAgreementID`
+    FOREIGN KEY (`RentalAgreementID`)
     REFERENCES `mydb`.`RentalAgreement` (`AgreementID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
