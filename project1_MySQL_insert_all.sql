@@ -171,29 +171,74 @@ insert into Inventory (InventoryID, EquipmentName, `Condition`) values('18', 'Fi
 insert into Inventory (InventoryID, EquipmentName, `Condition`) values('19', 'Beach Volleyball Kit', 'Poor');
 insert into Inventory (InventoryID, EquipmentName, `Condition`) values('20', 'First Aid Kit', 'Good');
 
+
+#### Job Positions
+insert into jobpositions (JobDescription) values ('Fishing Guide');
+insert into jobpositions (JobDescription) values ('Hiking Guide');
+insert into jobpositions (JobDescription) values ('Rental Staff');
+insert into jobpositions (JobDescription) values ('Ropes Course Instructor');
+insert into jobpositions (JobDescription) values ('White Water Rafting Guide');
+insert into jobpositions (JobDescription) values ('Rock Climbing Instructor');
+insert into jobpositions (JobDescription) values ('Manager');
+insert into jobpositions (JobDescription) values ('Administrative Staff');
+insert into jobpositions (JobDescription) values ('Janitor');
+insert into jobpositions (JobDescription) values ('First Aid Instructor');
+insert into jobpositions (JobDescription) values ('Equipment Manager');
+insert into jobpositions (JobDescription) values ('Student Assistant');
+insert into jobpositions (JobDescription) values ('Chief Operating Officer');
+insert into jobpositions (JobDescription) values ('Vehicle Operator');
+insert into jobpositions (JobDescription) values ('Accountant');
+insert into jobpositions (JobDescription) values ('Camping Trip Guide');
+insert into jobpositions (JobDescription) values ('Canoe/Kayak Instructor');
+insert into jobpositions (JobDescription) values ('Front Desk Staff');
+insert into jobpositions (JobDescription) values ('Intern');
+insert into jobpositions (JobDescription) values ('Security Guard');
+
+###Employment History
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1000, 20, '1993-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1001, 19, '2000-11-08', '2001-11-08');
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1002, 18, '2005-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1003, 17, '2010-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1004, 16, '2015-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1005, 15, '2001-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1006, 14, '2006-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1007, 13, '2011-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1008, 12, '2015-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1009, 11, '1998-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1010, 10, '1996-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1011, 9, '2013-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1012, 8, '2002-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1013, 7, '2008-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1014, 6, '1999-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1015, 5, '2013-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1016, 4, '2014-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1017, 3, '2007-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1018, 2, '2006-11-08', Null);
+insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1019, 1, '2009-11-08', Null);
+
 use mydb;
 
 ####
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-09-17', '2', '3');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-10-27', '3', '6');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-17', '18', '4');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-01-21', '18', '4');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-12-29', '2', '3');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-10-27', '15', '6');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-07', '14', '4');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-13', '5', '6');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-02-31', '9', '3');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-03-09', '15', '6');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-05-19', '14', '4');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-03-15', '5', '6');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2015-01-17', '20', '14');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-10-27', '19', '6');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-07', '16', '4');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-13', '17', '6');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-02-31', '10', '5');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-03-09', '4', '10');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-05-19', '7', '11');
-insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-03-15', '8', '12');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-09-17', '2', '1003');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-10-27', '3', '1006');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-17', '18', '1004');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-01-21', '18', '1004');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-12-29', '2', '1003');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-10-27', '15', '1006');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-07', '14', '1004');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-13', '5', '1006');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-02-28', '9', '1003');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-03-09', '15', '1006');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-05-19', '14', '1004');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-03-15', '5', '1006');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2015-01-17', '20', '1014');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-10-27', '19', '1006');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-07', '16', '1004');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2016-11-13', '17', '1006');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-02-28', '10', '1005');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-03-09', '4', '1010');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-05-19', '7', '1011');
+insert into rentalagreement (AgreementDate, CustomerRentID, EmployeePOSID) values('2017-03-15', '8', '1012');
 
 ####
 use mydb;
@@ -217,47 +262,3 @@ INSERT INTO `rentaldetail` (RentalAgreementID, CheckoutDate, ExpectedReturnDate,
 INSERT INTO `rentaldetail` (RentalAgreementID, CheckoutDate, ExpectedReturnDate, ActualReturnDate, InventoryID) VALUES ('18', '2016-12-24', '2016-12-26', '2016-12-27', '18');
 INSERT INTO `rentaldetail` (RentalAgreementID, CheckoutDate, ExpectedReturnDate, ActualReturnDate, InventoryID) VALUES ('19', '2016-05-01', '2016-05-03', '2016-05-03', '19');
 INSERT INTO `rentaldetail` (RentalAgreementID, CheckoutDate, ExpectedReturnDate, ActualReturnDate, InventoryID) VALUES ('20', '2016-08-06', '2016-08-08', '2016-08-08', '20');
-
-
-###
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1000, 20, '1993-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1001, 19, '2000-11-08', '2001-11-08');
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1002, 18, '2005-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1003, 17, '2010-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1004, 16, '2015-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1005, 15, '2001-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1006, 14, '2006-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1007, 13, '2011-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1008, 12, '2015-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1009, 11, '1998-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1010, 10, '1996-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1011, 9, '2013-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1012, 8, '2002-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1013, 7, '2008-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1014, 6, '1999-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1015, 5, '2013-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1016, 4, '2014-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1017, 3, '2007-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1018, 2, '2006-11-08', Null);
-insert into employmenthistory (EmployeeID, PositionID, StartDate, EndDate) values ( 1019, 1, '2009-11-08', Null);
-
-insert into jobpositions (JobDescription) values ('Fishing Guide');
-insert into jobpositions (JobDescription) values ('Hiking Guide');
-insert into jobpositions (JobDescription) values ('Rental Staff');
-insert into jobpositions (JobDescription) values ('Ropes Course Instructor');
-insert into jobpositions (JobDescription) values ('White Water Rafting Guide');
-insert into jobpositions (JobDescription) values ('Rock Climbing Instructor');
-insert into jobpositions (JobDescription) values ('Manager');
-insert into jobpositions (JobDescription) values ('Administrative Staff');
-insert into jobpositions (JobDescription) values ('Janitor');
-insert into jobpositions (JobDescription) values ('First Aid Instructor');
-insert into jobpositions (JobDescription) values ('Equipment Manager');
-insert into jobpositions (JobDescription) values ('Student Assistant');
-insert into jobpositions (JobDescription) values ('Chief Operating Officer');
-insert into jobpositions (JobDescription) values ('Vehicle Operator');
-insert into jobpositions (JobDescription) values ('Accountant');
-insert into jobpositions (JobDescription) values ('Camping Trip Guide');
-insert into jobpositions (JobDescription) values ('Canoe/Kayak Instructor');
-insert into jobpositions (JobDescription) values ('Front Desk Staff');
-insert into jobpositions (JobDescription) values ('Intern');
-insert into jobpositions (JobDescription) values ('Security Guard');
