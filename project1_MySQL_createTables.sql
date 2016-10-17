@@ -242,3 +242,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`RentalDetail` (
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `mydb`.`view1` AS
+    SELECT 
+        `mydb`.`customer`.`FirstName` AS `First Name`,
+        `mydb`.`customer`.`LastName` AS `Last Name`,
+        `mydb`.`customer`.`CustomerID` AS `CustomerID`,
+        `mydb`.`customer`.`HomePhone` AS `HomePhone`
+    FROM
+        `mydb`.`customer`
