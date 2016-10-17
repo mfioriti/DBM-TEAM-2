@@ -257,3 +257,17 @@ VIEW `mydb`.`view1` AS
         `mydb`.`customer`.`HomePhone` AS `HomePhone`
     FROM
         `mydb`.`customer`
+
+#Stored Procedure customer list for a trip on a specific day. Example: CALL `mydb`.`spTripCustomers`('2016-11-17');
+
+use mydb;DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spTripCustomers`(in tripDay date)
+BEGIN
+	SELECT customer.firstname, customer.lastname, trips.triptype, tripschedule.tripDate
+	FROM signups
+    join customer on customer.CustomerId = signups.CustomerID
+    join tripschedule on signups.TripScheduleID = tripschedule.TripScheduleID
+    join Trips on tripschedule.TripCode = trips.TripCode
+    where tripDate = tripDay    
+    ;
+END$$
