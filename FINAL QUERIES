@@ -1,11 +1,15 @@
 use mydb;
 
 #Query 1
+#How many customers have been sponsored?
+
 select count(customer.CustomerID)
 from customer
 where SponsorID is not NULL;
 
 #Query 2
+Organize our customer list by customer id, name, phone number, and finally customer type.
+
 select customer.CustomerID, customer.FirstName, customer.LastName
 from customer
 group by customer.CustomerID;
@@ -20,18 +24,24 @@ from customer
 order by customer.CustomerType;
 
 #Query 3
+#Show customers who have sponsored more than two guests.
+
 select customer.FirstName, customer.LastName, count(SponsorID)
 from customer
 where count(customer.sponsorid) > 2
 group by customer.SponsorID;
 
 #Query 4
+What equipment do we need to replace?
+
 select InventoryID, EquipmentName
 from inventory
 where inventory.`condition`='POOR';
 
 
-#### Query 5: Provide a list of trips that had the most attendance and lasted the longest in duration.
+#### Query 5:
+#Provide a list of trips that were the most popular and lasted the longest in duration.
+
 select trips.TripType, count(signups.CustomerID) as 'Attendance', trips.TripLength
 from signups
 inner join tripschedule on signups.TripScheduleID = tripschedule.TripScheduleID
@@ -39,33 +49,37 @@ inner join trips on tripschedule.TripCode = trips.TripCode
 group by trips.TripType, trips.TripLength
 order by count(signups.CustomerID) desc, trips.TripLength;
 
-#### Query 6: Give a count of customers for each classification or customer type..
+
+#### Query 6: 
+#Count how many of each customer type we have
 
 select CustomerType, count(CustomerID) as 'Number of Customer Types'
 from customer
 group by CustomerType;
 
 
-#### Query 7: Choose the highest priced equipment based on the student fee. Display the equipment name and associated student fee.
-##Find student fee and equipmenttype. Multiply values, converted frov varchar to 
+#### Query 7: 
+#Choose the highest priced equipment based on the student fee. Display the equipment name and associated student fee.
 
 select EquipmentName, StudentFee
 from equipmenttype
 order by StudentFee desc
 limit 10;
 
-#### Query 8: Identify customers and their contact information who have sponsored at least 2 guests to acknowledge and reward them. 
-####			Display the information for each sponsor only once.
+#### Query 8: 
+#Identify customers and their contact information who have sponsored at least 1 guest to acknowledge and reward them. 
 
 select cMemb.*, count(cMemb.SponsorID) as 'Guests Sponsored'
 from customer cMemb
 inner join customer cGuest on cMemb.CustomerID = cGuest.CustomerID
 group by cMemb.CustomerID
-having count(cMemb.SponsorID) > 2;
+having count(cMemb.SponsorID) > 1;
 
 
 
 #Query 9
+#Identify customers, their contact information, and the equipment information for customers 
+#who have not returned equipment and are at least 2 days overdue.
 select customer.FirstName, customer.LastName, customer.HomePhone, inventory.EquipmentName, 
 (rentaldetail.ActualReturnDate - rentaldetail.ExpectedReturnDate)
 from customer
@@ -75,22 +89,26 @@ left join inventory on rentaldetail.InventoryID=inventory.inventoryid
 where (rentaldetail.ActualReturnDate - rentaldetail.ExpectedReturnDate) > 1;
 
 #Query 10
+#Names of employees who have served as trip leaders and are currently in service as a project coordinator. 
 select jobpositions.PositionID
 from jobpositions;
 
 
 #Query 11
+#Choose the highest priced equipment based on the student fee. 
 select equipmentname, max(studentfee)
 from equipmenttype;
 
 #Query 12
+#List the trips by date from most to least recent
 select tripdate
 from tripschedule
 join trips on tripschedule.tripcode = trips.TripCode
 group by tripDate desc;
 
 
-# QUERY 13 display the trip schedule
+# QUERY 13 
+#display the trip schedule
 select 
 S.tripDate as 'Trip Date',
 T.TripType as 'Trip Name',
@@ -103,7 +121,8 @@ concat(A.FirstName, ' ',A.LastName) as 'Assistant Leader'
     order by S.tripDate;
     
     
-# Query 14 list employment history for each employee
+# Query 14 
+#list employment history for each employee
 select 
 concat(E.FirstName, ' ', E.LastName) AS 'Employee Name',
 P.JobDescription as 'Job',
@@ -118,7 +137,8 @@ select I.InventoryID ,I.EquipmentName, I.Condition
 	from inventory I
     where I.Condition = 'Good';
     
-# Query 16 List all rentals where the expected return date and the actual return date were the same day
+# Query 16 
+#List all rentals where the expected return date and the actual return date were the same day
 select 
 A.agreementdate as 'Date of Agreement',
 concat(C.firstname, ' ', C.LastName) as 'Customer Name',
